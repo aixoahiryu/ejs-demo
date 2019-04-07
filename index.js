@@ -19,6 +19,7 @@ app.use('/', EntryController);
     const url = require('./router' + file);
     app.use(api, url);
 });*/
+//ClearDB
 
 app.listen(PORT, () => {
 	console.log(PORT);
