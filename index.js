@@ -8,8 +8,8 @@ const PORT = process.env.PORT || 5000;
 
 const HomeController = require('./router/home.js');
 const EntryController = require('./router/entry.js');
-app.set('views', __dirname + '/view');
 app.set('view engine', 'ejs');
+app.set('views', __dirname + '/view');
 
 app.use(express.static(__dirname + '/public'));
 app.use('/', HomeController);
