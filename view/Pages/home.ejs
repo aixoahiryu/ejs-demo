@@ -1,0 +1,25 @@
+<% include ../component/header.ejs %>
+
+<div class="container">
+    <h1>ejs-demo</h1>
+
+    <% posts.forEach(function(post){ %>
+    <article class="home">
+        <span class="post-date"><%= post.pdate %></span>
+        <h3>
+            <a href="<%= post.pid %>">
+                <%= post.ptitle %>
+            </a>
+        </h3>
+
+        <div>
+            <%= post.pdescription %>
+        </div>
+
+    </article>
+    <% }) %>
+    
+    <hr>
+</div>
+
+<% include ../component/footer.ejs %>

@@ -1,0 +1,22 @@
+<% include ../component/header.ejs %>
+
+<div class="container">
+    <ul class="breadcrumb">
+        <li class="breadcrumb-item"><a href="/">Home</a></li>
+        <li class="breadcrumb-item">
+            <%= post.Ptitle %>
+        </li>
+    </ul>
+
+        <h2>
+            <%= post.Ptitle %>
+        </h2>
+
+        <div>
+            <%= post.Pcontent %>
+        </div>
+
+    <hr>
+</div>
+
+<% include ../component/footer.ejs %>
